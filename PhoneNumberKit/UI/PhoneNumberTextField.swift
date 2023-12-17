@@ -214,7 +214,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
 
     private var insets: UIEdgeInsets?
     private var clearButtonPadding: CGFloat?
-
+    public var onFlagSelect: ((String) -> Void)?
     // MARK: Lifecycle
 
     /// Init with a phone number kit instance. Because a PhoneNumberKit initialization is expensive,
@@ -332,6 +332,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
             text = "+" + countryCode
         }
         
+        onFlagSelect?(text ?? "")
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didPressFlagButton))
         addGestureRecognizer(gesture)
     }
@@ -558,6 +559,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
 extension PhoneNumberTextField: CountryCodePickerDelegate {
     public func countryCodePickerViewControllerDidPickCountry(_ country: CountryCodePickerViewController.Country) {
         text = country.prefix
+        onFlagSelect?(text ?? "")
         _defaultRegion = country.code
         partialFormatter.defaultRegion = country.code
         updateFlag()
