@@ -550,7 +550,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
 
 extension PhoneNumberTextField: CountryCodePickerDelegate {
     public func countryCodePickerViewControllerDidPickCountry(_ country: CountryCodePickerViewController.Country) {
-        text = isEditing ? "+" + country.prefix : ""
+        text = country.prefix
         _defaultRegion = country.code
         partialFormatter.defaultRegion = country.code
         updateFlag()
