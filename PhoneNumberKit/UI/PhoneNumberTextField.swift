@@ -331,7 +331,9 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         if let countryCode = phoneNumberKit.countryCode(for: currentRegion)?.description, (text ?? "").isEmpty {
             text = "+" + countryCode
         }
-        addTarget(self, action: #selector(didPressFlagButton), for: .touchUpInside)
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didPressFlagButton))
+        addGestureRecognizer(gesture)
     }
 
     open func updatePlaceholder() {

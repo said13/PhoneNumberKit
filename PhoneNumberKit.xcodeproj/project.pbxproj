@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		1B80904E2300B4DC006AE849 /* MetadataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417BD6A2210AC4900477EE7 /* MetadataParsing.swift */; };
 		1B80904F2300B4DC006AE849 /* MetadataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417BD6A2210AC4900477EE7 /* MetadataParsing.swift */; };
 		1B8090502300B4DD006AE849 /* MetadataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417BD6A2210AC4900477EE7 /* MetadataParsing.swift */; };
+		20662A342B2E8B0200375527 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20662A332B2E8B0200375527 /* Preview.swift */; };
 		3417BD6B2210AC4900477EE7 /* MetadataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417BD6A2210AC4900477EE7 /* MetadataParsing.swift */; };
 		3420CF5E1BE8959F00FAE34F /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420CF5D1BE8959F00FAE34F /* Formatter.swift */; };
 		3422D9BA1BE6A2D500867D02 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422D9B91BE6A2D500867D02 /* ParseManager.swift */; };
@@ -108,6 +109,7 @@
 /* Begin PBXFileReference section */
 		11C2EF381D62BC3200052D44 /* NSRegularExpression+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Swift.swift"; sourceTree = "<group>"; };
 		1B0651161E2AD698006AE849 /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
+		20662A332B2E8B0200375527 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		3417BD6A2210AC4900477EE7 /* MetadataParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataParsing.swift; sourceTree = "<group>"; };
 		3420CF5D1BE8959F00FAE34F /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		3422D9B91BE6A2D500867D02 /* ParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				3420CF5D1BE8959F00FAE34F /* Formatter.swift */,
 				343B850A1C62A25600918E46 /* PartialFormatter.swift */,
 				343B850B1C62A25600918E46 /* PhoneNumberTextField.swift */,
+				20662A332B2E8B0200375527 /* Preview.swift */,
 				5D14267C238F5842002DD197 /* CountryCodePickerViewController.swift */,
 				8CC43F642AB9F3DB0094FDD1 /* CountryCodePickerOptions.swift */,
 				342418811BB70F5200EE70E7 /* PhoneNumberParser.swift */,
@@ -509,6 +512,7 @@
 				34F26FBE2517DCB700B6AF4D /* Bundle+Resources.swift in Sources */,
 				8CC43F652AB9F3DB0094FDD1 /* CountryCodePickerOptions.swift in Sources */,
 				342418821BB70F5200EE70E7 /* PhoneNumberParser.swift in Sources */,
+				20662A342B2E8B0200375527 /* Preview.swift in Sources */,
 				346922671BC01DCC0023482F /* MetadataManager.swift in Sources */,
 				3420CF5E1BE8959F00FAE34F /* Formatter.swift in Sources */,
 				343B850D1C62A25600918E46 /* PhoneNumberTextField.swift in Sources */,
@@ -761,6 +765,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				INFOPLIST_FILE = PhoneNumberKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -791,6 +796,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				INFOPLIST_FILE = PhoneNumberKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
