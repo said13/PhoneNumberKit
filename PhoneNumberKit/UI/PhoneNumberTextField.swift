@@ -331,6 +331,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         if let countryCode = phoneNumberKit.countryCode(for: currentRegion)?.description, (text ?? "").isEmpty {
             text = "+" + countryCode
         }
+        isEnabled = false
     }
 
     open func updatePlaceholder() {
