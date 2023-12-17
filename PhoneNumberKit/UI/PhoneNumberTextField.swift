@@ -327,6 +327,10 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         }
         let fontSize = (font ?? UIFont.preferredFont(forTextStyle: .body)).pointSize
         self.flagButton.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+        
+        if let countryCode = phoneNumberKit.countryCode(for: currentRegion)?.description, (text ?? "").isEmpty {
+            text = "+" + countryCode
+        }
     }
 
     open func updatePlaceholder() {
