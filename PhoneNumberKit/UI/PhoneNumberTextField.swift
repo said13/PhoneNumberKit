@@ -337,6 +337,10 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
         addGestureRecognizer(gesture)
     }
 
+    public func getPrefix() {
+        onFlagSelect?(text ?? "")
+    }
+    
     open func updatePlaceholder() {
         guard self.withExamplePlaceholder else { return }
         if isEditing, !(self.text ?? "").isEmpty { return } // No need to update a placeholder while the placeholder isn't showing
